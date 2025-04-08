@@ -1,0 +1,35 @@
+# Archivos de base de datos
+*.db
+*.sqlite
+*.sqlite3
+
+# Entorno virtual
+venv/
+env/
+ENV/
+techrentals_env/
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Archivos de entorno
+.env
+.env.local
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

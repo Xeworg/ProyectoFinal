@@ -50,7 +50,7 @@ h1 {
     justify-content: center;
     text-align:center;
     color: #ffffff;
-    background-image: url('./img/1.jpg');
+    background-image: url('../img/1.jpg');
     background-size: cover;
     background-position: center;
     min-height: 450px;
