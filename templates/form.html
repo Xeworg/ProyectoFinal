@@ -3,18 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>TechRentals - Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_styless.css') }}">
 </head>
-<body>
-    <h1>Login</h1>
-    <form action="/login" method="post" class="w-50">
-        <input type="text" name="username" placeholder="Nombre de usuario" class="form-control" required>
-        <input type="password" name="password" placeholder="Contraseña" class="form-control" required>
-        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
-        <a href="/register">¿No tienes una cuenta? Regístrate</a>
-    </form>
+<body class="form-page">
+    <div class="auth-container">
+        <div class="logo">
+            <h2><i class="bi bi-laptop"></i> TechRentals</h2>
+            <p class="text-muted">Inicia sesión en tu cuenta</p>
+        </div>
+        <form action="/login" method="post" class="auth-form">
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    <input type="text" name="username" placeholder="Nombre de usuario" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    <input type="password" name="password" placeholder="Contraseña" class="form-control" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+            <div class="auth-link">
+                <a href="/register">¿No tienes una cuenta? Regístrate</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
